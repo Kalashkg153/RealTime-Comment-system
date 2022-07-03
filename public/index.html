@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTime-Comment-System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4><strong>Welcome to the blog</strong></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dicta nihil distinctio quae omnis, quam ea magni architecto perferendis laboriosam.</p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h4 class="border-bottom pb-2">Comments</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Write a Comment</label>
+                    <textarea  id="textarea" rows="3" class="form-control mt-4"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4 ">
+                <button id="submitBtn" class="btn btn-primary">Post Comment</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="typing text-success"></div>
+                <ul class="comment_box">
+                    <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h6>Kalash Gupta</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+                                <div><i class="fa-solid fa-clock"></i></div>
+                                <small>11:40 PM</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h6>Kalash Gupta</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, commodi.</p>
+                                <div><i class="fa-solid fa-clock"></i></div>
+                                <small>11:40 PM</small>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
