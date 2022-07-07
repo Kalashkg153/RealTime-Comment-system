@@ -2,4 +2,5 @@
 
 After download or clone run npm install to install all the dependancies.
 
-If you find this repo helpful then don't forget to give a start  to this repository. :)
+Run App.js file using Node.js "Node App.js"
+try it on two diffrent tabs and post comment on both tabs to see the real-time posting.
